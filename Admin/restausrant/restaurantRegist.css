@@ -47,7 +47,9 @@ section{
 
   border: 1px solid var(--border-color);
   border-radius: 10px;
+
   margin: 10px auto; 
+  padding: 15px;
 }
 
 .img-area{
@@ -107,3 +109,30 @@ section{
 }
 
 
+/* 가게 정보 */
+
+ .categoryChoose label {
+  width: 60px;
+  height: 30px;
+
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  display: inline-block; /* 크기지정 */
+  text-align: center;
+
+  line-height: 28px;
+
+  cursor: pointer; 
+  user-select: none;
+  
+}
+
+[name=categoryNo] {
+  display: none;
+}
+
+
+[name=categoryNo]:checked+label{
+  background-color: var(--main-color);
+  color: white;
+}
