@@ -3,9 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>신고 관리 페이지-점메추</title>
+  <link rel="stylesheet" href="reportList.css">
 </head>
 <body>
+
+  <header>
+    헤더
+  </header>
   
+  <main>
+    <section class="left-section">사이드 메뉴</section>
+    <section class="main-section">
+
+      <h1>신고 관리 페이지-점메추</h1>
+      <div class="report-area">
+  
+        
+        <div class="report-div">
+          <div class="report-box">
+            <a href="#">
+              <span>123232</span>
+              <span>user11</span>
+              <span>부적절한 게시글</span>
+              <span>21 분 전</span>
+            </a>
+          </div>
+
+          <div class="btn-box">
+            <button class="uncompleted">처리 이전</button>
+          </div>
+        </div>
+
+        <div class="report-div">
+          <div class="report-box">
+            <a href="#">
+              <span>123233</span>
+              <span>user111</span>
+              <span>혐오감을 줄 수 있는 게시글</span>
+              <span>2 일 전</span>
+            </a>
+          </div>
+
+          <div class="btn-box">
+            <button class="uncompleted">처리 이전</button>
+          </div>
+        </div>
+
+        <div class="report-div">
+          <div class="report-box">
+            <a href="#">
+              <span>123233</span>
+              <span>user111</span>
+              <span>혐오감을 줄 수 있는 게시글</span>
+              <span>2024.10.11</span>
+            </a>
+          </div>
+
+          <div class="btn-box">
+            <button class="completed">처리 완료</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pagination-area">
+
+        <ul class="pagination">
+          <li><a href="#">&lt;&lt;</a></li>
+          <li><a href="#">&lt;</a></li>
+
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+
+          <li><a href="#">&gt;</a></li>
+          <li><a href="#">&gt;&gt;</a></li>
+        </ul>
+
+      </div>
+
+      
+
+    </section>
+    <section class="right-section">
+      <form action="#" method="get" id="boardSearch"></form>
+
+        <select name="key" id="searchKey">
+          <option value="n">신고자</option>
+          <option value="l">신고 유형</option>
+        </select>
+
+        <input type="text" name="query" id="searchQuery" placeholder="검색어를 입력해주세요.">
+
+        <button>검색</button>
+      </form>
+
+    </section>
+  </main>
+
+
+
 </body>
 </html>

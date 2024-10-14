@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --main-color : rgba(97, 192, 191, 1);
+  --border-color : rgb(182, 182, 182);
+}
+
+
+html, body, main {
+  height: 100%;
+}
+
+main{
+  display: flex;
+
+}
+
+section{  
+  border: 1px solid black; /* 임시 */
+
+
+}
+
+.left-section, .right-section{
+  width: 50%;
+}
+
+.main-section {
+  width: 2000px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+h1 {
+  margin: 10px;
+}
+
+/* 회원 현황판 */
+
+.memberStatus{
+  border-radius: 20px;
+
+  width: 500px;
+  height: 200px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.memberStatus-head {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  font-weight: bold;
+
+  height: 20%;
+  background-color: var(--main-color);
+
+  text-align: center;
+  line-height: 40px;
+}
+
+.container-1 {
+  display: flex;
+  height: 20%;
+}
+
+.container-1 > div {
+  width: 50%;
+  border: 1px solid var(--border-color);
+
+  text-align: center;
+  line-height: 40px;
+}
+
+.container-1:last-child > div:first-child {
+  border: none;
+  border-right: 1px solid var(--border-color);
+}
+
+.container-1:last-child > div:last-child {
+  border: none;
+  border-left: 1px solid var(--border-color);
+}
+
+.container-1:last-child {
+  border: 1px solid var(--border-color);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* 멤버 리스트 테이블*/
+
+.memberList {
+  border-collapse: collapse;
+
+  width: 90%;
+  margin: 50px auto;
+
+}
+
+.memberList tr {
+  height: 30px;
+}
+
+.memberList td {
+  text-align: center;
+}
