@@ -96,14 +96,37 @@ h1 {
   border-bottom-right-radius: 20px;
 }
 
+
+/* 정렬 조건 버튼 비동기 */
+
+.btn-area{
+  margin: 20px 50px;
+}
+
+.btn-area button {
+  width: 70px;
+  height: 30px;
+
+  background-color: white;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 30px;
+
+  transition-duration: 0.1s;
+}
+
+
 /* 멤버 리스트 테이블*/
 
 .memberList {
   border-collapse: collapse;
 
   width: 90%;
-  margin: 50px auto;
+  margin: 0 auto;
 
+}
+
+.memberList >thead{
+  background-color: var(--main-color);
 }
 
 .memberList tr {
@@ -112,4 +135,56 @@ h1 {
 
 .memberList td {
   text-align: center;
+}
+
+
+.memberList button {
+  width: 70px;
+  height: 30px;
+
+  background-color: white;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 30px;
+
+  transition-duration: 0.1s;
+}
+
+
+/* pagination-area css */
+
+.pagination-area {
+  margin: 50px 0;
+}
+
+.pagination{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.pagination li{
+  width: 20px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.pagination a{
+  text-decoration-line: none;
+  color: black;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 전체 버튼 */
+
+button:hover{
+  cursor: pointer;
+}
+
+button:active{
+  background-color: rgb(181, 181, 255);
 }

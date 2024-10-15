@@ -20,9 +20,9 @@ main{
 }
 
 section{  
-  border: 1px solid black; /* 임시 */
+  /* border: 1px solid black; */
 
-
+/* 임시 */
 }
 
 
@@ -117,7 +117,7 @@ input {
   height: 100%;
 
   margin: 20px;
-  padding : 15px 10px 5px;
+  padding : 15px 5px 10px 10px;
 
   font-size: 16px;
 
@@ -186,12 +186,28 @@ input {
   width: 100%;
   height: 100%;
 
+  padding : 15px 5px 10px 10px;
+
   margin: 0;
 
   text-align: center;
 
 
 
+}
+
+/* 주소 등록 */
+
+.adress-area button {
+  width: 15%;
+  height: 100%;
+
+  margin: 20px;
+
+  font-size: 16px;
+
+  border : 1px solid var(--border-color);
+  border-radius: 20px;
 }
 
 
