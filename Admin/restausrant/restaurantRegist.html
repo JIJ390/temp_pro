@@ -59,12 +59,10 @@
 
 
             <h3># 카테고리 선택</h3>
-
-            
-
-            <div class="categoryChoose">
+<!-- 
+            <div class="categoryChoose" th:each= "category:${categoryList}">
               <input type="radio" name="categoryNo"  value="1" id="category1">
-              <label for="category1">중식</label>
+              <label for="category1" th:text="${category.categortName}">중식</label>
               
               <input type="radio" name="categoryNo"  value="2" id="category2">
               <label for="category2">한식</label>
@@ -72,6 +70,14 @@
               <input type="radio" name="categoryNo"  value="3" id="category3">
               <label for="category3">양식</label>
               
+            </div> -->
+
+
+            <div class="categoryChoose" >
+              <th:block th:each= "category:${categoryList}">
+                <input type="radio" name="categoryNo"  th:value="${category.categortNo}" th:id="${category.categortNo}">
+                <label th:for="${category.categortNo}" th:text="${category.categortName}">중식</label>
+              </th:block>
             </div>
 
 
